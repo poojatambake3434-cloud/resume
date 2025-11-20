@@ -1,0 +1,339 @@
+/* --------------------------------------------------------
+   GLOBAL STYLING
+--------------------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: #e0f2f1; /* light teal background */
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------
+   NAVBAR
+--------------------------------------------------------- */
+
+.navbar {
+  width: 100%;
+  background: #009688; /* Teal Primary */
+  padding: 15px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.nav-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  background: #ffffff33;
+}
+
+/* --------------------------------------------------------
+   HERO SECTION (PROFESSIONAL)
+--------------------------------------------------------- */
+
+.hero-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.professional-hero {
+  background: linear-gradient(135deg, #009688, #64ffda); /* teal → aqua */
+  color: #fff;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.3);
+  margin-bottom: 15px;
+}
+
+.hero-section h1 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.hero-section h1 span {
+  color: #e0f2f1;
+}
+
+.hero-section h3 {
+  opacity: 0.9;
+  font-size: 1.2rem;
+}
+
+/* --------------------------------------------------------
+   ABOUT SECTION
+--------------------------------------------------------- */
+
+.about-section {
+  width: 85%;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.about-section h2 {
+  margin-bottom: 15px;
+  color: #00695c; /* deep teal */
+  font-size: 1.8rem;
+}
+
+.about-section p {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+}
+
+/* --------------------------------------------------------
+   SKILLS SECTION
+--------------------------------------------------------- */
+
+.skills-section {
+  width: 85%;
+  margin: 40px auto;
+}
+
+.skills-section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #00695c;
+}
+
+.skills-box {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  background: white;
+  width: 260px;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card h3 {
+  margin-bottom: 10px;
+  color: #00796b; /* teal shade */
+}
+
+.skill-card p {
+  font-size: 1.05rem;
+}
+
+/* --------------------------------------------------------
+   CONTACT SECTION
+--------------------------------------------------------- */
+
+.contact-section {
+  background: #009688;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.contact-box p {
+  font-size: 1.1rem;
+  margin: 8px 0;
+}
+
+.contact-box a {
+  color: #e0f2f1;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------
+   BUTTONS
+--------------------------------------------------------- */
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.primary {
+  background: #009688; /* teal */
+  color: #fff;
+}
+
+.primary:hover {
+  background: #00796b; /* darker teal */
+}
+
+.secondary {
+  background: #fff;
+  color: #009688;
+  border: 2px solid #009688;
+}
+
+.secondary:hover {
+  background: #e0f2f1;
+}
+
+/* --------------------------------------------------------
+   RESUME PAGE DESIGN
+--------------------------------------------------------- */
+
+.resume-section {
+  width: 85%;
+  margin: 40px auto;
+}
+
+.resume-title {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #00695c;
+  margin-bottom: 25px;
+}
+
+.resume-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.resume-block {
+  margin-bottom: 30px;
+}
+
+.resume-block h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #00796b;
+}
+
+.resume-details h3 {
+  font-size: 1.2rem;
+  color: #004d40;
+}
+
+.resume-details p {
+  margin: 5px 0;
+}
+
+/* Skills grid inside resume */
+.skills-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  padding: 0;
+}
+
+.skills-grid li {
+  background: #b2dfdb;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 500;
+  color: #004d40;
+}
+
+/* --------------------------------------------------------
+   BIODATA PAGE DESIGN
+--------------------------------------------------------- */
+
+.biodata-section {
+  width: 85%;
+  margin: 40px auto;
+}
+
+.biodata-section h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  color: #00695c;
+  margin-bottom: 20px;
+}
+
+.biodata-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.biodata-list {
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+.biodata-list li {
+  margin: 10px 0;
+}
+
+.biodata-list strong {
+  color: #00796b;
+}
+
+.center-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* --------------------------------------------------------
+   RESPONSIVE DESIGN
+--------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  .skills-box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
